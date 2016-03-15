@@ -1,6 +1,7 @@
-require "middleman-core"
-
-Middleman::Extensions.register :middleman-book do
-  require "my-extension/extension"
-  MyExtension
+class Book < Middleman::Extension
+  def initialize(app, options_hash={}, &block)
+    super
+  end
 end
+
+::Middleman::Extensions.register(:book, Book)
