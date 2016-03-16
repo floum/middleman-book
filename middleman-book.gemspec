@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name        = "middleman-book"
   s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
-  # s.authors     = ["Your Name"]
+  s.authors     = ["Efflamm CASTEL"]
   # s.email       = ["email@example.com"]
   # s.homepage    = "http://example.com"
   # s.summary     = %q{A short summary of your extension}
