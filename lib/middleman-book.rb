@@ -14,7 +14,7 @@ module Middleman
 
     helpers do
       def table_of_contents
-        result = '<ol>'
+        result = '<ol class="table_of_contents">'
         chapters = sitemap.resources.map(&:metadata).map do |meta|
           meta[:chapter]
         end.reject(&:nil?).uniq.sort_by do |chapter|
@@ -31,7 +31,7 @@ module Middleman
           end
           chapter_string + "</ul>"
         end.join + '</li>'
-        result += '<ol>'
+        result += '</ol>'
       end
     end
 
